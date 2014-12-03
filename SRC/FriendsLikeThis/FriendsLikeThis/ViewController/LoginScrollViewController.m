@@ -125,6 +125,8 @@
 
 -(void)keyboardDidShow:(NSNotification*)notification{
   
+    
+    
 
     // Get the size of the keyboard.
     NSDictionary* info = [notification userInfo];

@@ -18,6 +18,8 @@
 
 #import "LoginScrollViewController1.h"
 
+#import "WeiboSDK.h"
+
 
 @interface AppDelegate ()<ICETutorialControllerDelegate,UserOperationDeleate>
 
@@ -27,6 +29,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [WeiboSDK enableDebugMode:YES];
+    [WeiboSDK registerApp:WeiboAppKey];
     
    [self iceTutorialViewController];
     

@@ -21,5 +21,10 @@
 #define StoryBoardFileName @"Main"
 
 
+
+#define WeiboAppKey @"1385789994"
+#define WeiboAppSecrety @"7cfcec3c43d78f82c1243454cfb149f7"
+#define WeiboRedirectURL @"https://api.weibo.com/oauth2/default.html"
+
 #endif
 

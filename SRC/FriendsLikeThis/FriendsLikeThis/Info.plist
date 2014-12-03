@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>voole.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>flt.friendlikethis</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -29,6 +29,17 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wb1385789994</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>flt.friendlikethis</string>
+		</dict>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
