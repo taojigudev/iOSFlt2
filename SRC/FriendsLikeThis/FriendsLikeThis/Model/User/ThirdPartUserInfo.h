@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString* const ThirdPartDidLoginNotification=@"ThirdPartDidLoginNofitication";
+static NSString* const ThirdPartDidLogoutNotification=@"ThirdPartDidLogoutNotification";
+
+
+static NSString* const ThirdPartNotificationThirdPartNameKey=@"ThirdPartNameKey";
+
 
 static NSString* const ThirdPartCodeQQ=@"QQ";
 static NSString* const ThirdPartCodeSina=@"Sina";
