@@ -62,13 +62,17 @@
     
 }
 
+-(void)forgetButtonClicked:(id)sender{
+    
+}
+
 #pragma mark -- weibo delegate message
 
 -(void)didReceiveWeiboResponse:(WBBaseResponse *)response{
     if ([response isKindOfClass:[WBAuthorizeResponse class]]) {
         WBAuthorizeResponse*war=(WBAuthorizeResponse*)response;
         [ThirdPartUserInfo sharedInstance].thirdPartCode=ThirdPartCodeSina;
-        [ThirdPartUserInfo sharedInstance].userId=war.userID;
+        [ThirdPartUserInfo sharedInstance].accountId=war.userID;
         [ThirdPartUserInfo sharedInstance].token=war.accessToken;
         
     }
@@ -113,11 +117,18 @@
     [weiboLoginButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [weiboLoginButton addTarget:self action:@selector(weibologinButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
+    forgetPasswordButton=[[UIButton alloc]initWithFrame:CGRectZero];
+    [forgetPasswordButton setTitle:NSLocalizedString(@"ForgetPassword", nil) forState:UIControlStateNormal];
+    [forgetPasswordButton addTarget:self action:@selector(forgetButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    companyLabel=[[UILabel alloc]initWithFrame:CGRectZero];
+    companyLabel.text=NSLocalizedString(@"CompanyLabel", nil);
+    companyLabel.backgroundColor=[UIColor redColor];
+    
+    
     scrollView=[[UIScrollView alloc]initWithFrame:CGRectZero];
     scrollView.backgroundColor=[UIColor greenColor];
-
-    //[self addSubViews2ScrollView];
-
+    
     [self configureTransitionFlag:NO];
     
 }
@@ -131,19 +142,43 @@
     [containerView addSubview:loginButton];
     [containerView addSubview:qqLoginButton];
     [containerView addSubview:weiboLoginButton];
+    [containerView addSubview:forgetPasswordButton];
+    [containerView addSubview:companyLabel];
     //[containerView addSubview:;
 }
 -(void)addSubViewConstraints{
     
-    
-    
-    NSDictionary*viewDictionray=NSDictionaryOfVariableBindings(scrollView,titleLabel,detailLabel,accountTextField,passwordTextField,loginButton,weiboLoginButton,qqLoginButton);
+    NSDictionary*viewDictionray=NSDictionaryOfVariableBindings(scrollView,titleLabel,detailLabel,accountTextField,passwordTextField,loginButton,weiboLoginButton,qqLoginButton,forgetPasswordButton,companyLabel);
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scrollView]|" options:0 metrics:nil views:viewDictionray]];
      [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[scrollView]|" options:0 metrics:nil views:viewDictionray]];
-     
     
-    NSString*verticalVisualFormat=@"V:|-[titleLabel]-[detailLabel]-[accountTextField]-[passwordTextField]-[loginButton]-[weiboLoginButton]-[qqLoginButton]-|";
+    NSString*horiVisualFormt=@"H:|-10-[titleLabel]-10-|";
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:horiVisualFormt options:0 metrics:nil views:viewDictionray]];
+    horiVisualFormt=@"H:|-[detailLabel]-|";
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:horiVisualFormt options:0 metrics:nil views:viewDictionray]];
+    
+    horiVisualFormt=@"H:|-50-[accountTextField]-50-|";
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:horiVisualFormt options:0 metrics:nil views:viewDictionray]];
+    
+    horiVisualFormt=@"H:|-[passwordTextField]-|";
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:horiVisualFormt options:0 metrics:nil views:viewDictionray]];
+    
+    horiVisualFormt=@"H:|-[loginButton]-|";
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:horiVisualFormt options:0 metrics:nil views:viewDictionray]];
+    
+    horiVisualFormt=@"H:|-20-[weiboLoginButton]-20-[qqLoginButton(==weiboLoginButton)]-50-|";
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:horiVisualFormt options:0 metrics:nil views:viewDictionray]];
+    
+    
+    horiVisualFormt=@"H:|-[forgetPasswordButton]-|";
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:horiVisualFormt options:0 metrics:nil views:viewDictionray]];
+    
+    horiVisualFormt=@"H:|-[companyLabel]-|";
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:horiVisualFormt options:0 metrics:nil views:viewDictionray]];
+    
+    
+    NSString*verticalVisualFormat=@"V:|-[titleLabel]-[detailLabel]-[accountTextField]-[passwordTextField]-[loginButton]-[weiboLoginButton]-[qqLoginButton]-[forgetPasswordButton]-[companyLabel]-|";
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:verticalVisualFormat options:0 metrics:nil views:viewDictionray]];
     
 }
@@ -158,6 +193,8 @@
     loginButton.translatesAutoresizingMaskIntoConstraints=flag;
     weiboLoginButton.translatesAutoresizingMaskIntoConstraints=flag;
     qqLoginButton.translatesAutoresizingMaskIntoConstraints=flag;
+    forgetPasswordButton.translatesAutoresizingMaskIntoConstraints=flag;
+    companyLabel.translatesAutoresizingMaskIntoConstraints=flag;
 }
 
 @end

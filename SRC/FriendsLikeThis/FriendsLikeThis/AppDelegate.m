@@ -87,6 +87,12 @@
 
 - (void)didReceiveWeiboResponse:(WBBaseResponse *)response
 {
+    if (response.statusCode==WeiboSDKResponseStatusCodeSuccess&&[response class]==[WBAuthorizeResponse class]) {
+        
+        WBAuthorizeResponse*authResponse=(WBAuthorizeResponse*)response;
+        NSLog(@"User id  is %@",authResponse.userID);
+        NSLog(@"token is %@",authResponse.accessToken);
+    }
 }
 
 -(void)tutorialController:(ICETutorialController *)tutorialController didClickOnLeftButton:(UIButton *)sender{
@@ -112,8 +118,8 @@
 
 
 -(void)showLoginViewController{
-    UIStoryboard*storyboard=[UIStoryboard storyboardWithName:StoryBoardFileName bundle:nil];
-    NSString*className=NSStringFromClass([LoginScrollViewController class]);
+    //UIStoryboard*storyboard=[UIStoryboard storyboardWithName:StoryBoardFileName bundle:nil];
+    //NSString*className=NSStringFromClass([LoginScrollViewController class]);
     
     //LoginScrollViewController*lsvc=(LoginScrollViewController*)[storyboard instantiateViewControllerWithIdentifier:className];
     LoginScrollViewController1*lsvc=[[LoginScrollViewController1 alloc]init];

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1639D8321AA553170075F168 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D8271AA553170075F168 /* RECommonFunctions.m */; };
+		1639D8331AA553170075F168 /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D8291AA553170075F168 /* REFrostedContainerViewController.m */; };
+		1639D8341AA553170075F168 /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D82B1AA553170075F168 /* REFrostedViewController.m */; };
+		1639D8351AA553170075F168 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D82D1AA553170075F168 /* UIImage+REFrostedViewController.m */; };
+		1639D8361AA553170075F168 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D82F1AA553170075F168 /* UIView+REFrostedViewController.m */; };
+		1639D8371AA553170075F168 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D8311AA553170075F168 /* UIViewController+REFrostedViewController.m */; };
 		9DEDC9071A271BBC002321B8 /* LoginScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEDC9061A271BBC002321B8 /* LoginScrollViewController.m */; };
 		9DEDC9451A2B191F002321B8 /* ICETutorialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEDC9401A2B191F002321B8 /* ICETutorialController.m */; };
 		9DEDC9461A2B191F002321B8 /* ICETutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEDC9421A2B191F002321B8 /* ICETutorialPage.m */; };
@@ -41,6 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1639D8261AA553170075F168 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		1639D8271AA553170075F168 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		1639D8281AA553170075F168 /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		1639D8291AA553170075F168 /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		1639D82A1AA553170075F168 /* REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedViewController.h; sourceTree = "<group>"; };
+		1639D82B1AA553170075F168 /* REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		1639D82C1AA553170075F168 /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		1639D82D1AA553170075F168 /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		1639D82E1AA553170075F168 /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		1639D82F1AA553170075F168 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		1639D8301AA553170075F168 /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		1639D8311AA553170075F168 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
 		9DEDC9051A271BBC002321B8 /* LoginScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginScrollViewController.h; path = FriendsLikeThis/ViewController/LoginScrollViewController.h; sourceTree = "<group>"; };
 		9DEDC9061A271BBC002321B8 /* LoginScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginScrollViewController.m; path = FriendsLikeThis/ViewController/LoginScrollViewController.m; sourceTree = "<group>"; };
 		9DEDC93F1A2B191F002321B8 /* ICETutorialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICETutorialController.h; sourceTree = "<group>"; };
@@ -114,6 +132,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1639D8251AA553170075F168 /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1639D8261AA553170075F168 /* RECommonFunctions.h */,
+				1639D8271AA553170075F168 /* RECommonFunctions.m */,
+				1639D8281AA553170075F168 /* REFrostedContainerViewController.h */,
+				1639D8291AA553170075F168 /* REFrostedContainerViewController.m */,
+				1639D82A1AA553170075F168 /* REFrostedViewController.h */,
+				1639D82B1AA553170075F168 /* REFrostedViewController.m */,
+				1639D82C1AA553170075F168 /* UIImage+REFrostedViewController.h */,
+				1639D82D1AA553170075F168 /* UIImage+REFrostedViewController.m */,
+				1639D82E1AA553170075F168 /* UIView+REFrostedViewController.h */,
+				1639D82F1AA553170075F168 /* UIView+REFrostedViewController.m */,
+				1639D8301AA553170075F168 /* UIViewController+REFrostedViewController.h */,
+				1639D8311AA553170075F168 /* UIViewController+REFrostedViewController.m */,
+			);
+			path = REFrostedViewController;
+			sourceTree = "<group>";
+		};
+		1639D8381AA5535C0075F168 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		9DEDC93E1A2B191F002321B8 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +189,7 @@
 		9DEDC98F1A2EEC7D002321B8 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				1639D8251AA553170075F168 /* REFrostedViewController */,
 				9DEDC9901A2EEC7D002321B8 /* libWeiboSDK */,
 			);
 			name = ThirdPart;
@@ -259,6 +304,7 @@
 		9DF742771A247C7A00DFAC6C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1639D8381AA5535C0075F168 /* Main */,
 				9DEDC9491A2B4697002321B8 /* UserRelated */,
 				9DEDC93E1A2B191F002321B8 /* Introduction */,
 			);
@@ -367,6 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DEDC9071A271BBC002321B8 /* LoginScrollViewController.m in Sources */,
+				1639D8331AA553170075F168 /* REFrostedContainerViewController.m in Sources */,
+				1639D8361AA553170075F168 /* UIView+REFrostedViewController.m in Sources */,
 				9DEDC9B31A2EFE71002321B8 /* ThirdPartUserInfo.m in Sources */,
 				9DF7425A1A24787500DFAC6C /* ViewController.m in Sources */,
 				9DEDC9471A2B191F002321B8 /* ICETutorialStyle.m in Sources */,
@@ -374,7 +422,11 @@
 				9DEDC9451A2B191F002321B8 /* ICETutorialController.m in Sources */,
 				9DEDC9461A2B191F002321B8 /* ICETutorialPage.m in Sources */,
 				9DF742541A24787500DFAC6C /* main.m in Sources */,
+				1639D8371AA553170075F168 /* UIViewController+REFrostedViewController.m in Sources */,
+				1639D8351AA553170075F168 /* UIImage+REFrostedViewController.m in Sources */,
 				9DEDC94C1A2B46DA002321B8 /* RegisterViewController.m in Sources */,
+				1639D8321AA553170075F168 /* RECommonFunctions.m in Sources */,
+				1639D8341AA553170075F168 /* REFrostedViewController.m in Sources */,
 				9DEDC9501A2C83EB002321B8 /* LoginScrollViewController1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

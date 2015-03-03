@@ -126,12 +126,10 @@
 -(void)keyboardDidShow:(NSNotification*)notification{
   
     
-    
-
     // Get the size of the keyboard.
-    NSDictionary* info = [notification userInfo];
-    NSValue* aValue = [info objectForKey:UIKeyboardFrameEndUserInfoKey];
-    CGSize keyboardSize = [aValue CGRectValue].size;
+    //NSDictionary* info = [notification userInfo];
+    //NSValue* aValue = [info objectForKey:UIKeyboardFrameEndUserInfoKey];
+    //CGSize keyboardSize = [aValue CGRectValue].size;
     
     [UIView animateWithDuration:0.3 animations:^{
         //self.scrollView.contentOffset=CGPointMake(0, 60);

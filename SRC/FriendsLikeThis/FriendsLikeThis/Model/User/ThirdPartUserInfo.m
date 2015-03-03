@@ -7,13 +7,15 @@
 //
 
 #import "ThirdPartUserInfo.h"
+#import "WeiboSDK.h"
 
 @implementation ThirdPartUserInfo{
     
 }
 
 @synthesize thirdPartCode;
-@synthesize userId;
+@synthesize accountId;
+@synthesize accountName;
 @synthesize token;
 
 
@@ -27,6 +29,14 @@
     }
     return instance;
 }
-
++(ThirdPartUserInfo*)userInfoFromWeiboResponse:(WBAuthorizeResponse*)response{
+    
+    ThirdPartUserInfo*tpui=[[ThirdPartUserInfo alloc]init];
+    tpui.thirdPartCode=ThirdPartCodeSina;
+    tpui.accountId=response.userID;
+    tpui.token=response.refreshToken;
+    
+    return tpui;
+}
 
 @end
