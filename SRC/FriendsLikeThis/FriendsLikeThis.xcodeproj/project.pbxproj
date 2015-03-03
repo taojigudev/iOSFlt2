@@ -13,6 +13,10 @@
 		1639D8351AA553170075F168 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D82D1AA553170075F168 /* UIImage+REFrostedViewController.m */; };
 		1639D8361AA553170075F168 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D82F1AA553170075F168 /* UIView+REFrostedViewController.m */; };
 		1639D8371AA553170075F168 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D8311AA553170075F168 /* UIViewController+REFrostedViewController.m */; };
+		1639D83B1AA556610075F168 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D83A1AA556610075F168 /* SideMenuViewController.m */; };
+		1639D83E1AA558A40075F168 /* MenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D83D1AA558A40075F168 /* MenuNavigationController.m */; };
+		1639D8411AA5883C0075F168 /* TestHomeViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D8401AA5883C0075F168 /* TestHomeViewController1.m */; };
+		1639D8441AA58B540075F168 /* TestHhomeViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639D8431AA58B540075F168 /* TestHhomeViewController2.m */; };
 		9DEDC9071A271BBC002321B8 /* LoginScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEDC9061A271BBC002321B8 /* LoginScrollViewController.m */; };
 		9DEDC9451A2B191F002321B8 /* ICETutorialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEDC9401A2B191F002321B8 /* ICETutorialController.m */; };
 		9DEDC9461A2B191F002321B8 /* ICETutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEDC9421A2B191F002321B8 /* ICETutorialPage.m */; };
@@ -59,6 +63,14 @@
 		1639D82F1AA553170075F168 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
 		1639D8301AA553170075F168 /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
 		1639D8311AA553170075F168 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		1639D8391AA556610075F168 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideMenuViewController.h; path = FriendsLikeThis/ViewController/Main/SideMenuViewController.h; sourceTree = "<group>"; };
+		1639D83A1AA556610075F168 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideMenuViewController.m; path = FriendsLikeThis/ViewController/Main/SideMenuViewController.m; sourceTree = "<group>"; };
+		1639D83C1AA558A40075F168 /* MenuNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuNavigationController.h; path = FriendsLikeThis/ViewController/Main/MenuNavigationController.h; sourceTree = "<group>"; };
+		1639D83D1AA558A40075F168 /* MenuNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuNavigationController.m; path = FriendsLikeThis/ViewController/Main/MenuNavigationController.m; sourceTree = "<group>"; };
+		1639D83F1AA5883C0075F168 /* TestHomeViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestHomeViewController1.h; path = FriendsLikeThis/ViewController/Main/TestHomeViewController1.h; sourceTree = "<group>"; };
+		1639D8401AA5883C0075F168 /* TestHomeViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestHomeViewController1.m; path = FriendsLikeThis/ViewController/Main/TestHomeViewController1.m; sourceTree = "<group>"; };
+		1639D8421AA58B540075F168 /* TestHhomeViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestHhomeViewController2.h; path = FriendsLikeThis/ViewController/Main/TestHhomeViewController2.h; sourceTree = "<group>"; };
+		1639D8431AA58B540075F168 /* TestHhomeViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestHhomeViewController2.m; path = FriendsLikeThis/ViewController/Main/TestHhomeViewController2.m; sourceTree = "<group>"; };
 		9DEDC9051A271BBC002321B8 /* LoginScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginScrollViewController.h; path = FriendsLikeThis/ViewController/LoginScrollViewController.h; sourceTree = "<group>"; };
 		9DEDC9061A271BBC002321B8 /* LoginScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginScrollViewController.m; path = FriendsLikeThis/ViewController/LoginScrollViewController.m; sourceTree = "<group>"; };
 		9DEDC93F1A2B191F002321B8 /* ICETutorialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICETutorialController.h; sourceTree = "<group>"; };
@@ -154,6 +166,14 @@
 		1639D8381AA5535C0075F168 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1639D8391AA556610075F168 /* SideMenuViewController.h */,
+				1639D83A1AA556610075F168 /* SideMenuViewController.m */,
+				1639D83C1AA558A40075F168 /* MenuNavigationController.h */,
+				1639D83D1AA558A40075F168 /* MenuNavigationController.m */,
+				1639D83F1AA5883C0075F168 /* TestHomeViewController1.h */,
+				1639D8401AA5883C0075F168 /* TestHomeViewController1.m */,
+				1639D8421AA58B540075F168 /* TestHhomeViewController2.h */,
+				1639D8431AA58B540075F168 /* TestHhomeViewController2.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -417,9 +437,13 @@
 				1639D8361AA553170075F168 /* UIView+REFrostedViewController.m in Sources */,
 				9DEDC9B31A2EFE71002321B8 /* ThirdPartUserInfo.m in Sources */,
 				9DF7425A1A24787500DFAC6C /* ViewController.m in Sources */,
+				1639D8411AA5883C0075F168 /* TestHomeViewController1.m in Sources */,
+				1639D83B1AA556610075F168 /* SideMenuViewController.m in Sources */,
 				9DEDC9471A2B191F002321B8 /* ICETutorialStyle.m in Sources */,
 				9DF742571A24787500DFAC6C /* AppDelegate.m in Sources */,
+				1639D83E1AA558A40075F168 /* MenuNavigationController.m in Sources */,
 				9DEDC9451A2B191F002321B8 /* ICETutorialController.m in Sources */,
+				1639D8441AA58B540075F168 /* TestHhomeViewController2.m in Sources */,
 				9DEDC9461A2B191F002321B8 /* ICETutorialPage.m in Sources */,
 				9DF742541A24787500DFAC6C /* main.m in Sources */,
 				1639D8371AA553170075F168 /* UIViewController+REFrostedViewController.m in Sources */,

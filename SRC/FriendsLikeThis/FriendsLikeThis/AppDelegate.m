@@ -15,13 +15,14 @@
 #import "LoginScrollViewController.h"
 #import "UserOperationDelegate.h"
 
-
 #import "LoginScrollViewController1.h"
-
 #import "WeiboSDK.h"
+#import "REFrostedViewController.h"
+#import "MenuNavigationController.h"
+#import "SideMenuViewController.h"
+#import "TestHomeViewController1.h"
 
-
-@interface AppDelegate ()<ICETutorialControllerDelegate,UserOperationDeleate,WeiboSDKDelegate>
+@interface AppDelegate ()<ICETutorialControllerDelegate,UserOperationDeleate,WeiboSDKDelegate,REFrostedViewControllerDelegate>
 
 @end
 
@@ -92,6 +93,8 @@
         WBAuthorizeResponse*authResponse=(WBAuthorizeResponse*)response;
         NSLog(@"User id  is %@",authResponse.userID);
         NSLog(@"token is %@",authResponse.accessToken);
+        
+        [self presentMainViewController];
     }
 }
 
@@ -155,6 +158,33 @@
     resultController.delegate=self;
     [resultController setPages:pageArray];
     return resultController;
+    
+}
+
+#pragma mark -- private messages
+
+-(void)presentMainViewController{
+    
+    SideMenuViewController*smvc=[[SideMenuViewController alloc]initWithStyle:UITableViewStylePlain];
+  
+    TestHomeViewController1*thvc1=[[TestHomeViewController1 alloc]init];
+   
+    
+    
+    MenuNavigationController*navigationController=[[MenuNavigationController alloc]initWithRootViewController:thvc1];
+    
+    UINavigationController*menuNavi=[[UINavigationController alloc]initWithRootViewController:smvc];
+    
+    smvc.startViewController=navigationController;
+    
+    REFrostedViewController *frostedViewController = [[REFrostedViewController alloc] initWithContentViewController:navigationController menuViewController:menuNavi];
+    frostedViewController.direction = REFrostedViewControllerDirectionLeft;
+    frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
+    frostedViewController.liveBlur = YES;
+    frostedViewController.delegate = self;
+    
+    
+    self.window.rootViewController=frostedViewController;
     
 }
 
